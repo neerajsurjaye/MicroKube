@@ -41,7 +41,7 @@ def login():
         return "INVALID CREDENTIALS USER DOESN'T EXIST", 401
 
 
-@server.route("/validate" , method=["POST"])
+@server.route("/validate" , methods=["POST"])
 def validate():
     encoded_jwt = request.headers["Authorization"]
 

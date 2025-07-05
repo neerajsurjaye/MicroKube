@@ -22,7 +22,8 @@ spec:
         spec:
             containers:
                 - name: auth
-                  image: neerajsurjaye/auth
+                  image: spec/auth
+                  imagePullPolicy: Never
                   ports:
                       - containerPort: 5000
                   envFrom:
